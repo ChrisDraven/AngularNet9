@@ -1,0 +1,10 @@
+<h3>Angular 19 .Net 9 app<h3>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)" style="margin-buttom:30px;" >
+
+    @for(pokemon of lstData; track pokemon){
+        <div class="example-box" cdkDrag>
+         {{pokemon.name}}
+        </div>
+    }
+
+</div>
